@@ -1,9 +1,10 @@
 import { fastify } from "fastify";
-import { DatabaseMemory } from "./database-memory.js";
+// import { DatabaseMemory } from "./database-memory.js";
+import { DatabasePostgres } from "./database-postgres.js";
 
 const server = fastify();
-const database = new DatabaseMemory();
-
+// const database = new DatabaseMemory();
+const database = new DatabasePostgres();
 server.post("/videos", (request, reply) => {
   const { title, description, duration } = request.body;
 
