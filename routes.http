@@ -1,19 +1,19 @@
-POST http://localhost:3333/videos
+POST https://fist-step-nodejs.onrender.com/videos
 Content-Type: application/json
 
 {
-  "title": "Video node",
+  "title": "Video 10",
   "description": "This is the video node",
   "duration": 60
 }
 
 ###
 
-GET http://localhost:3333/videos
+GET https://fist-step-nodejs.onrender.com/videos
 
 ###
 
-PUT http://localhost:3333/videos/599e0bb3-db2d-4ca0-bb7a-dd5330a3b3a0
+PUT https://fist-step-nodejs.onrender.com/videos/a54c3f2d-0d75-42d6-8013-d3462e6e5b4f
 Content-Type: application/json
 
 {
@@ -24,6 +24,6 @@ Content-Type: application/json
 
 ###
 
-DELETE http://localhost:3333/videos/599e0bb3-db2d-4ca0-bb7a-dd5330a3b3a0
+DELETE https://fist-step-nodejs.onrender.com/videos/a54c3f2d-0d75-42d6-8013-d3462e6e5b4f
 
 
